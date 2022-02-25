@@ -1,0 +1,85 @@
+/* ---------- Clases y reglas Generales ----------*/
+
+@keyframes desappear{
+    0%{
+    opacity: 1;
+    }
+    100%{
+    opacity: 0;
+    }
+}
+
+
+.desappeared{
+    animation-name: desappear;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(Files/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+body, html{
+    margin: 0px;
+    padding: 0px;
+}
+
+.CenterContent{
+    display: flex;
+    top: 0px;left: 0px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.View{
+    position: absolute;
+    height: 800px;
+    width: 360px;
+    background-color: white;
+}
+
+.center{
+    flex-shrink: 0;
+}
+
+.hidden{
+    display: none;
+}
+
+*{
+    font-family: "Roboto-Regular" !important;
+}
+
+.formdiv{
+    width: 80%;
+}
+
+.formtext{
+    margin-top: 20px !important;
+    margin-bottom: 0px !important;
+}
+
+
+/* ---------- Vista Bienvenida ----------*/
+
+.wellcome{
+    font-size: 35px;
+}
+
+.logobienvenida{
+    height: 150px;
+}
+
+/* ---------- Vista Ingresar ----------*/
+
+.ingresar{
+    font-size: 30px;
+}
+
+.textodown{
+    margin-top: 20px !important;
+}
