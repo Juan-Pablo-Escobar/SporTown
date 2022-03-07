@@ -172,3 +172,9 @@ function savedata(){
     }
     
 }
+
+function cerrarSesion(){
+    localStorage.setItem("user",-1)
+    localStorage.setItem("last",[])
+    changeViewAnimation("Vista-Ingreso",0)
+}
