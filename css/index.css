@@ -143,3 +143,17 @@ body, html{
     font-size: 20px;
     white-space: nowrap;
 }
+
+/* ---------- Vista Pefil ----------*/
+
+.iconoperfilprincipal{
+    height: 120px;
+    border: 3.5px black solid;
+    border-radius: 15px;
+}
+
+.textousuario{
+    font-size: 20px;
+    margin-bottom: unset;
+    margin-top: 10px;
+}
