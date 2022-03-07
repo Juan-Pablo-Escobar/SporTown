@@ -255,3 +255,29 @@ body, html{
     top: 22%;
     overflow-y: auto;
 }
+
+/* ---------- Vista Rutinas ----------*/
+
+
+
+/* ---------- Vista Registro ----------*/
+
+.botonregistro{
+    margin-top: 20px;
+}
+
+
+/* ---------- Vista Datos Personales ----------*/
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.firsthalf{
+    margin-right: 5%;
+}
+
+.secodhalf{
+    margin-left: 5%;
+}
