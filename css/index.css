@@ -170,3 +170,15 @@ body, html{
     justify-content: center;
     overflow: hidden;
 }
+
+.textoheadermenu{
+    margin-bottom: unset;
+    font-size: 20px;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.divhistorialheader{
+    position: absolute;
+    top: 41%;
+}
