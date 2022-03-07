@@ -157,3 +157,16 @@ body, html{
     margin-bottom: unset;
     margin-top: 10px;
 }
+
+.divheadermenu{
+    position: absolute;
+    top: 20%;
+}
+
+.CenterElements{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
