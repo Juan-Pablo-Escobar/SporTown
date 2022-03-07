@@ -114,3 +114,9 @@ body, html{
 }
 
 /* ---------- Vista Menu ----------*/
+
+.menu{
+    position: absolute;
+    left: 5%;
+    top: 20%;
+}
