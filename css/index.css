@@ -33,7 +33,7 @@
 
 @font-face {
     font-family: "Roboto-Regular";
-    src: url(Files/Roboto/Roboto-Regular.ttf) format("truetype");
+    src: url(../Files/Roboto/Roboto-Regular.ttf) format("truetype");
 }
 
 body, html{
@@ -266,14 +266,43 @@ body, html{
     top: 23%;
 }
 
-.rutina-div-dias div p{
+.rutina-div-dias div div p{
     margin-bottom: unset;
-    transition: font-size 0.2s ease-out 100ms;
     left: 5px;
     margin-left: 10px;
+    display: flex;
 }
-.rutina-div-dias div p:hover{
-    font-size: 30px;
+.rutina-div-dias div div div p{
+    margin-bottom: unset;
+    left: 5px;
+    margin-left: 10px;
+    display: flex;
+    font-size: 0px;
+    transition: font-size 0.2s ease-in-out 100ms;
+}
+
+.rutina-div-dias div div div img{
+    height: 0px;
+    border: 0px black solid;
+    border-radius: 15px;
+    transition: height 0.2s ease-in-out 100ms,border-radius 0.2s ease-in-out 100ms, border 0.2s ease-in-out 100ms;
+}
+
+.rutina-div-dias div div div{
+    display: flex;
+    align-items: center;
+    transition: display 0.2s ease-in-out 100ms;
+}
+
+
+.rutina-div-dias div div p:hover + div img{
+    height: 70px;
+    border: 3.5px black solid;
+    border-radius: 15px;
+}
+
+.rutina-div-dias div div p:hover + div p{
+    font-size: 1em;
 }
 
 .rutina-div-titulo{
