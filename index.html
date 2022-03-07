@@ -69,6 +69,76 @@
         </div>
     </div>
 
+    <div class= "View CenterContent" id="Vista-Datos-Personales">
+        <div class="center">
+            <p class="ingresar">Datos de Usuario</p>
+        </div>
+        <div class="center formdiv">
+            <p class="formtext">Nombre Completo</p>
+            <input class="form-control" id="nombrecompleto"></input>
+        </div>
+        <div class="flex">
+            <div class="firsthalf halfformdiv">
+                <p class="formtext">Edad</p>
+                <input class="form-control" id="edad"></input>
+            </div>
+            <div class="secodhalf halfformdiv">
+                <p class="formtext">Altura</p>
+                <input class="form-control" id="altura"></input>
+            </div>
+        </div>
+        <div class="formdiv">
+            <div>
+                <p class="formtext">Presenta alguno de los siguientes factures de riesgo?</p>
+            </div>
+            <div>
+                <input class="form-check-input" type="radio" id="factor1" value="option1" name="factoresderiesgo">
+                <label class="form-check-label" for="factor1">
+                    Cardiaco
+                </label>
+            </div>
+            <div>
+                <input class="form-check-input" type="radio" id="factor2" value="option2" name="factoresderiesgo">
+                <label class="form-check-label" for="factor2">
+                    Asma
+                </label>
+            </div>
+            <div>
+                <input class="form-check-input" type="radio" id="factor3" value="option3" name="factoresderiesgo">
+                <label class="form-check-label" for="factor3">
+                    Hipertension
+                </label>
+            </div>
+            <div>
+                <input class="form-check-input" type="radio" id="factor4" value="option4" name="factoresderiesgo">
+                <label class="form-check-label" for="factor4">
+                    Diabetes
+                </label>
+            </div>
+            <div>
+                <input class="form-check-input" type="radio" id="factor5" value="option5" name="factoresderiesgo">
+                <label class="form-check-label" for="factor5">
+                    Cáncer
+                </label>
+            </div>
+            <div>
+                <input class="form-check-input" type="radio" id="factor6" value="option6" name="factoresderiesgo">
+                <label class="form-check-label" for="factor6">
+                    Epilepsia
+                </label>
+            </div>
+            <div>
+                <input class="form-check-input" type="radio" id="factor7" value="option7" name="factoresderiesgo">
+                <label class="form-check-label" for="factor7">
+                    Otro
+                </label>
+            </div>
+        </div>
+        <div class="center botonregistro" type="button">
+            <button type="button" class="btn btn-dark" onclick="savedata()">GUARDAR</button>
+        </div>
+    </div>
+
     <div class= "View CenterContent" id="Vista-Carga">
         <div class="center">
             <img src="files/6769778118_2ef89979-65de-47a5-9867-f53a2b7f7ece.png" class="logobienvenida">
