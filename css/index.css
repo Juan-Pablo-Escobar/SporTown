@@ -92,10 +92,40 @@ body, html{
     border-radius: 15px;
 }
 
-.divpefil{
+.iconoregresar{
+    height: 35px;
+    left: 20%;
     position: absolute;
+    border-radius: 15px;
+}
+
+.divregresar{
     display: flex;
-    top: 5%; left: 60%;   
+    position: absolute;
+    float: right;
+    top: 11%;
+    left: 5%;
+    align-items: center;
+    cursor: pointer;
+}
+
+.divperfil{
+    display: flex;
+    position: absolute;
+    float: right;
+    top: 11%;
+    left: 73%;
+    align-items: center;
+    cursor: pointer;
+}
+
+.username{
+    margin-bottom: unset;
+    position: absolute;
+    right: 7px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .divpefil p{
