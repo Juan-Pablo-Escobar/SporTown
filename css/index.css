@@ -238,3 +238,20 @@ body, html{
     top: 85%;
     position: absolute;
 }
+
+/* ---------- Vista Dietas ----------*/
+
+.divdietaheader{
+    position: absolute;
+    top: 18%;
+    left: 7%;
+}
+
+
+.divdietas{
+    position: absolute;
+    width: 75%;
+    height: 35%;
+    top: 22%;
+    overflow-y: auto;
+}
