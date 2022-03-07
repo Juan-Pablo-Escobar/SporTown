@@ -19,7 +19,6 @@
     
 }
 
-
 .appeared{
     animation-name: appear;
     animation-duration: 500ms;
@@ -259,7 +258,43 @@ body, html{
 
 /* ---------- Vista Rutinas ----------*/
 
+.rutina-div-dias{
+    width: 75%;
+    height: 60%;
+    overflow-y: auto;
+    position: absolute;
+    top: 23%;
+}
 
+.rutina-div-dias div p{
+    margin-bottom: unset;
+    transition: font-size 0.2s ease-out 100ms;
+    left: 5px;
+    margin-left: 10px;
+}
+.rutina-div-dias div p:hover{
+    font-size: 30px;
+}
+
+.rutina-div-titulo{
+    position: absolute;
+    top: 18%;
+    left: 7%;
+}
+
+.rutina-div-dias div h1{
+    margin-bottom: unset;
+    font-size: 20px;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.rutina-div-titulo h1{
+    margin-bottom: unset;
+    font-size: 20px;
+    white-space: nowrap;
+    font-weight: bold;
+}
 
 /* ---------- Vista Registro ----------*/
 
