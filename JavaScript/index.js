@@ -63,6 +63,22 @@ function changeViewAnimation(objective,method){
 
 
 function verifyData(){
-    changeViewAnimation("Vista-Carga");
-    setTimeout(function(){ changeViewAnimation("Vista-Menu"); }, 3000);
+    let user = document.getElementById("email").value
+    let password = document.getElementById("password").value
+    let users = JSON.parse(localStorage.getItem('users'))
+    if(users!= null){
+        for(i = 0;i<users.length;i++){
+            if(users[i].user == user && users[i].password == password){
+                localStorage.setItem("user",i)
+                document.getElementById("email").value=""
+                document.getElementById("password").value=""
+                loadname()
+                changeViewAnimation("Vista-Carga");
+                setTimeout(function(){ changeViewAnimation("Vista-Menu",0); }, 3000);
+                return;
+            }
+        }
+    }
+
+    alert("Correo o Contraseña erroneo o vacio")
 }
