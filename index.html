@@ -58,21 +58,23 @@
     </div>
 
     <div class= "View CenterContent" id="Vista-Menu">
-        <div class="divpefil">
-            <p>Snatched</p>
-            <img src="files/Perfil Icono.png" class="iconoperfil">
+        <div class="divperfil" onclick="changeViewAnimation('Vista-Perfil',1)">
+            <p class="username" name = "username">Snatched</p>
+            <img src="Files/Perfil Icono.png" class="iconoperfil">
         </div>
-        <div>
-            <p>Snatched</p>
-            <img src="files/Perfil Icono.png" class="iconoperfil">
-        </div>
-        <div>
-            <p>Snatched</p>
-            <img src="files/Perfil Icono.png" class="iconoperfil">
-        </div>
-        <div>
-            <p>Snatched</p>
-            <img src="files/Perfil Icono.png" class="iconoperfil">
+        <div class="menu">
+            <div class="divmenu opcion" onclick="changeViewAnimation('Vista-Dietas',1)">
+                <img src="Files/Logo Dietas.png" class="iconomenu">
+                <p class="textomenu">Dietas</p>
+            </div>
+            <div class="divmenu opcion" onclick="changeViewAnimation('Vista-Rutinas',1)">
+                <img src="Files/Logo Rutinas.png" class="iconomenu">
+                <p class="textomenu">Rutinas</p>
+            </div>
+            <div class="divmenu opcion">
+                <img src="Files/Logo Mapa.png" class="iconomenu">
+                <p class="textomenu">Estado del aire en tu zona</p>
+            </div>
         </div>
     </div>
     
