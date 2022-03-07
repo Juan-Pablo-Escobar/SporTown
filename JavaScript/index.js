@@ -139,3 +139,36 @@ function verifyregister(){
         alert("Contraseña de verificacion diferente")
     }
 }
+
+function savedata(){
+    users = JSON.parse(localStorage.getItem("users"))
+    nombre = document.getElementById("nombrecompleto").value.trim()
+    edad = document.getElementById("edad").value.trim()
+    altura = document.getElementById("altura").value.trim()
+    radios = document.getElementsByName("factoresderiesgo")
+    riesgo = ""
+    for(i=0;i<radios.length;i++){
+        if(radios[i].checked == true){
+            riesgo = radios[i]
+        }
+    }
+    if(altura == "" || edad == "" || nombre == "" || riesgo == ""){
+        alert("Algun campo vacio")
+    }else{
+        
+        document.getElementById("nombrecompleto").value = ""
+        document.getElementById("edad").value = ""
+        document.getElementById("altura").value = ""
+        riesgo.checked = false
+        riesgo = riesgo.value
+
+        users[users.length-1].name = nombre
+        users[users.length-1].age = edad
+        users[users.length-1].height = altura
+        users[users.length-1].risk = riesgo
+        localStorage.setItem("users",JSON.stringify(users))
+        changeViewAnimation("Vista-Registro-Exitoso");
+        setTimeout(function(){ changeViewAnimation("Vista-Ingreso",2); }, 3000);
+    }
+    
+}
