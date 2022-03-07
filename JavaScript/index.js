@@ -178,3 +178,11 @@ function cerrarSesion(){
     localStorage.setItem("last",[])
     changeViewAnimation("Vista-Ingreso",0)
 }
+
+function loadname(){
+    username = document.getElementsByName("username")
+    usernamevalue = JSON.parse(localStorage.getItem("users"))[localStorage.getItem("user")]
+    for(i = 0;i<username.length;i++){
+        username[i].innerHTML = usernamevalue.name
+    }
+}
