@@ -22,13 +22,13 @@
 
 .appeared{
     animation-name: appear;
-    animation-duration: 1000ms;
+    animation-duration: 500ms;
     animation-fill-mode: forwards;
 }
 
 .desappeared{
     animation-name: desappear;
-    animation-duration: 1000ms;
+    animation-duration: 500ms;
     animation-fill-mode: forwards;
 }
 
@@ -255,6 +255,7 @@ body, html{
     top: 22%;
     overflow-y: auto;
 }
+
 
 /* ---------- Vista Rutinas ----------*/
 

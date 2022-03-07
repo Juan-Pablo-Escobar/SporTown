@@ -2,6 +2,7 @@
 var vistas = [];
 var body;
 var blankView;
+var arrayConstructor = [].constructor;
 
 window.addEventListener("DOMContentLoaded", getVistas);
 
@@ -15,7 +16,7 @@ function getVistas(){
     for(i = 1;i<childrensAmount;i++){
         childrens[i].classList.add("hidden");
     }
-    setTimeout(function(){ changeViewAnimation("Vista-Registro"); }, 2000);
+    setTimeout(function(){ changeViewAnimation("Vista-Ingreso",2); }, 2000);
 }
 
 function changeViewAnimation(objective,method){
@@ -83,6 +84,7 @@ function verifyData(){
     alert("Correo o Contraseña erroneo o vacio")
 }
 
+
 function regresar(){
     changeViewAnimation(JSON.parse(localStorage.getItem('last')).pop(),0)
     let historial = JSON.parse(localStorage.getItem('last'))
@@ -140,6 +142,7 @@ function verifyregister(){
     }
 }
 
+
 function savedata(){
     users = JSON.parse(localStorage.getItem("users"))
     nombre = document.getElementById("nombrecompleto").value.trim()
@@ -172,6 +175,7 @@ function savedata(){
     }
     
 }
+
 
 function cerrarSesion(){
     localStorage.setItem("user",-1)
