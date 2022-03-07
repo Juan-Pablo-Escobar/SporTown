@@ -89,3 +89,53 @@ function regresar(){
     historial.pop()
     localStorage.setItem('last', JSON.stringify(historial));
 }
+
+function verifyregister(){
+    if(document.getElementById("emailreg").value.trim() == "" || document.getElementById("passwordreg").value.trim() == "" || document.getElementById("verifpasswordreg").value.trim() == ""){
+        alert("Algun campo vacio")
+    }else if(document.getElementById("passwordreg").value== document.getElementById("verifpasswordreg").value){
+        user = document.getElementById("emailreg").value
+        password = document.getElementById("passwordreg").value
+
+        try{
+            local = JSON.parse(localStorage.getItem("users"))
+        }catch{
+            users = []
+            users.push({"user":user,"password":password})
+            localStorage.setItem("users",JSON.stringify(users))
+            changeViewAnimation("Vista-Datos-Personales",2)
+            document.getElementById("emailreg").value=null;
+            document.getElementById("passwordreg").value=null;
+            document.getElementById("verifpasswordreg").value=null;
+            return;
+        }
+
+        if(localStorage.getItem("users") == null){
+            users = []
+            users.push({"user":user,"password":password})
+            localStorage.setItem("users",JSON.stringify(users))
+            document.getElementById("emailreg").value=null;
+            document.getElementById("passwordreg").value=null;
+            document.getElementById("verifpasswordreg").value=null;
+            changeViewAnimation("Vista-Datos-Personales",2)
+            return;
+        }else{
+            users = JSON.parse(localStorage.getItem("users"))
+            for(i=0;i<users.length;i++){
+                if(users[i].user == user){
+                    alert("El usuario ya existe")
+                    return;
+                }
+            }
+            users.push({"user":user,"password":password})
+            localStorage.setItem("users",JSON.stringify(users))
+            changeViewAnimation("Vista-Datos-Personales",2)
+            document.getElementById("emailreg").value=null;
+            document.getElementById("passwordreg").value=null;
+            document.getElementById("verifpasswordreg").value=null;
+            return;
+        }
+    }else{
+        alert("Contraseña de verificacion diferente")
+    }
+}
