@@ -86,6 +86,10 @@ body, html{
 
 .iconoperfil{
     height: 75px;
+    left: 20%;
+    position: absolute;
+    border: 3.5px black solid;
+    border-radius: 15px;
 }
 
 .divpefil{
