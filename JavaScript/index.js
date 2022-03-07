@@ -18,12 +18,28 @@ function getVistas(){
     setTimeout(function(){ changeViewAnimation("Vista-Registro"); }, 2000);
 }
 
-function changeViewAnimation(objective){
+function changeViewAnimation(objective,method){
     let vistasAmount = vistas.length;
     for(i = 2;i<vistasAmount;i++){
         if(vistas[i].getAttribute('id') == objective){
             let change = vistas[i];
             let actual = vistas[0];
+            if(method==1){
+                if(localStorage.getItem('last')==null){
+                    localStorage.setItem('last', JSON.stringify([]))
+                }
+                try{
+                    JSON.parse(localStorage.getItem('last'))
+                }catch{
+                    localStorage.setItem('last', JSON.stringify([]))
+                }
+
+                let historial = JSON.parse(localStorage.getItem('last'))
+                historial.push(actual.getAttribute("id"))
+                localStorage.setItem('last', JSON.stringify(historial));
+            }else if(method == 2){
+                localStorage.setItem('last', JSON.stringify([]))
+            }
             vistas[1].classList.remove("hidden");
             vistas[1].classList.add("appeared");
             setTimeout(() => {
