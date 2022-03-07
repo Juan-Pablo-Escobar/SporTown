@@ -82,3 +82,10 @@ function verifyData(){
 
     alert("Correo o Contraseña erroneo o vacio")
 }
+
+function regresar(){
+    changeViewAnimation(JSON.parse(localStorage.getItem('last')).pop(),0)
+    let historial = JSON.parse(localStorage.getItem('last'))
+    historial.pop()
+    localStorage.setItem('last', JSON.stringify(historial));
+}
