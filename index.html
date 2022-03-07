@@ -25,17 +25,17 @@
 
     </div>
 
-    <div class= "View CenterContent" id="Vista-Registro">
+    <div class= "View CenterContent" id="Vista-Ingreso">
         <div class="center">
             <p class="ingresar">INGRESAR</p>
         </div>
         <div class="center formdiv">
             <p class="formtext">Correo Electronica</p>
-            <input type="email" class="form-control" placeholder="name@example.com"></input>
+            <input type="email" class="form-control" placeholder="name@example.com" id = "email"></input>
         </div>
         <div class="center formdiv">
             <p class="formtext">Contraseña</p>
-            <input type="password" class="form-control" ></input>
+            <input type="password" class="form-control" id = "password"></input>
         </div>
         <div class="center textodown">
             <p>Olvide mi contraseña</p>
@@ -44,7 +44,7 @@
             <button type="button" class="btn btn-dark" onclick="verifyData()">INGRESAR</button>
         </div>
         <div class="center">
-            <p class="textodown">No tiene una cuenta? <b>Registrate aqui</b></p>
+            <p class="textodown">No tiene una cuenta? <b class="opcion" onclick="changeViewAnimation('Vista-Registro',1)" >Registrate aqui</b></p>
         </div>
     </div>
 
