@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onclick="fullscreen()">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -198,22 +198,6 @@
         </div>
     </div>
 
-    <div class= "View CenterContent" id="Vista-Dietas">
-        <div class="divregresar" onclick="regresar()">
-            <img src="Files/Logo Regresar.png" class="iconoregresar">
-        </div>
-        <div class="divperfil" onclick="changeViewAnimation('Vista-Perfil',1)">
-            <p class="username" name = "username">Snatched</p>
-            <img src="Files/Perfil Icono.png" class="iconoperfil">
-        </div>
-        <div class="divdietaheader">
-            <h1 class="textoheadermenu">Dietas</h1>
-        </div>
-        <div class="divdietas">
-            <p class="textohistorial">Rutina #1</p>
-        </div>
-    </div>
-
     <div class= "View CenterContent" id="Vista-Rutinas">
         <div class="divregresar" onclick="regresar()">
             <img src="Files/Logo Regresar.png" class="iconoregresar">
@@ -226,25 +210,61 @@
             <h1 class="textoheadermenu">Rutinas</h1>
         </div>
         
+        <div class="divrutinas">
+            <div onclick="changeViewAnimation('Vista-Rutina',1)">
+                <img src="Files/Icono Rutina.png">
+                <p>Explicacion</p>
+            </div>
+            <div onclick="changeViewAnimation('Vista-Rutina',1)">
+                <img src="Files/Icono Rutina.png">
+                <p>Explicacion</p>
+            </div>
+            <div onclick="changeViewAnimation('Vista-Rutina',1)">
+                <img src="Files/Icono Rutina.png">
+                <p>Explicacion</p>
+            </div>
+            <div onclick="changeViewAnimation('Vista-Rutina',1)">
+                <img src="Files/Icono Rutina.png">
+                <p>Explicacion</p>
+            </div>
+            <div onclick="changeViewAnimation('Vista-Rutina',1)">
+                <img src="Files/Icono Rutina.png">
+                <p>Explicacion</p>
+            </div>
+        </div>
+    </div>
+
+    <div class= "View CenterContent" id="Vista-Dietas">
+        <div class="divregresar" onclick="regresar()">
+            <img src="Files/Logo Regresar.png" class="iconoregresar">
+        </div>
+        <div class="divperfil" onclick="changeViewAnimation('Vista-Perfil',1)">
+            <p class="username" name = "username">Snatched</p>
+            <img src="Files/Perfil Icono.png" class="iconoperfil">
+        </div>
+        <div class="divdietaheader">
+            <h1 class="textoheadermenu">Dietas</h1>
+        </div>
+        
         <div class="divdietas">
-            <div onclick="changeViewAnimation('Vista-Rutina',1)">
-                <img src="Files/Icono Rutina.png">
+            <div onclick="changeViewAnimation('Vista-Dieta',1)">
+                <img src="Files/Icono Dietas.png">
                 <p>Explicacion</p>
             </div>
-            <div onclick="changeViewAnimation('Vista-Rutina',1)">
-                <img src="Files/Icono Rutina.png">
+            <div onclick="changeViewAnimation('Vista-Dieta',1)">
+                <img src="Files/Icono Dietas.png">
                 <p>Explicacion</p>
             </div>
-            <div onclick="changeViewAnimation('Vista-Rutina',1)">
-                <img src="Files/Icono Rutina.png">
+            <div onclick="changeViewAnimation('Vista-Dieta',1)">
+                <img src="Files/Icono Dietas.png">
                 <p>Explicacion</p>
             </div>
-            <div onclick="changeViewAnimation('Vista-Rutina',1)">
-                <img src="Files/Icono Rutina.png">
+            <div onclick="changeViewAnimation('Vista-Dieta',1)">
+                <img src="Files/Icono Dietas.png">
                 <p>Explicacion</p>
             </div>
-            <div onclick="changeViewAnimation('Vista-Rutina',1)">
-                <img src="Files/Icono Rutina.png">
+            <div onclick="changeViewAnimation('Vista-Dieta',1)">
+                <img src="Files/Icono Dietas.png">
                 <p>Explicacion</p>
             </div>
         </div>
@@ -258,21 +278,72 @@
             <p class="username" name = "username">Snatched</p>
             <img src="Files/Perfil Icono.png" class="iconoperfil">
         </div>
-        <div class="divdietaheader">
-            <h1 class="textoheadermenu">Nombre de la Dieta</h1>
+        <div class="rutina-div-titulo">
+            <h1>Nombre de la Rutina</h1>
         </div>
-        <div class="divdietas">
-            <img src="" alt="">
-        </div>
-        <div class="divdietas">
-            <h1 class="textoheadermenu">Componentes de la Dieta</h1>
-            <p>componente 1</p>
-            <p>componente 1</p>
-            <p>componente 1</p>
-        </div>
-        <div class="divdietas">
-            <h1 class="textoheadermenu">Preparacion</h1>
-            <p>componente 1</p>
+        <div class="rutina-div-dias">
+            <div>
+                <h1>Lunes</h1>
+                <div>
+                    <p>componente 1</p>
+                    <div>
+                        <img src="Files/Perfil Icono.png">
+                        <p>Explicacion</p>
+                    </div>
+                </div>
+                <div>
+                    <p>componente 2</p>
+                    <div>
+                        <img src="Files/Perfil Icono.png">
+                        <p>Explicacion</p>
+                    </div>
+                </div>
+                <div>
+                    <p>componente 3</p>
+                    <div>
+                        <img src="Files/Perfil Icono.png">
+                        <p>Explicacion</p>
+                    </div>
+                </div>
+                <div>
+                    <p>componente 4</p>
+                    <div>
+                        <img src="Files/Perfil Icono.png">
+                        <p>Explicacion</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1>Martes</h1>
+                <div>
+                    <p>componente 1</p>
+                    <div>
+                        <img src="Files/Perfil Icono.png">
+                        <p>Explicacion</p>
+                    </div>
+                </div>
+                <div>
+                    <p>componente 2</p>
+                    <div>
+                        <img src="Files/Perfil Icono.png">
+                        <p>Explicacion</p>
+                    </div>
+                </div>
+                <div>
+                    <p>componente 3</p>
+                    <div>
+                        <img src="Files/Perfil Icono.png">
+                        <p>Explicacion</p>
+                    </div>
+                </div>
+                <div>
+                    <p>componente 4</p>
+                    <div>
+                        <img src="Files/Perfil Icono.png">
+                        <p>Explicacion</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -351,7 +422,6 @@
                 </div>
             </div>
         </div>
-        
     </div>
 
     <div class= "View CenterContent" id="Vista-Estado-Aire">

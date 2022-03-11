@@ -6,9 +6,22 @@ var arrayConstructor = [].constructor;
 
 window.addEventListener("DOMContentLoaded", getVistas);
 
+
+function fullscreen(){
+    if (window.fullscreen) {
+        var elem = document.documentElement;
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.webkitRequestFullscreen) { /* Safari */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE11 */
+            elem.msRequestFullscreen();
+        }
+    }
+}
+
+
 function getVistas(){
-    var elem = document.documentElement;
-    elem.requestFullscreen();
     let parent = document.getElementsByTagName("body")[0];
     body = parent;
     let childrens = parent.children;
