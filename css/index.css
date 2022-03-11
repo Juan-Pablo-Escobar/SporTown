@@ -267,7 +267,7 @@ body, html{
 }
 
 .divdietas div img{
-    border: 3px black solid;
+    border: 2.5px black solid;
     border-radius: 15px;
     padding: 3px;
     height: 50px;
@@ -317,14 +317,13 @@ body, html{
     transition: display 0.2s ease-in-out 100ms;
 }
 
-
-.rutina-div-dias div div p:active + div img{
+.rutina-div-dias div div p:hover + div img{
     height: 70px;
     border: 3.5px black solid;
     border-radius: 15px;
 }
 
-.rutina-div-dias div div p:active + div p{
+.rutina-div-dias div div p:hover + div p{
     font-size: 1em;
 }
 

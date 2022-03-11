@@ -7,6 +7,8 @@ var arrayConstructor = [].constructor;
 window.addEventListener("DOMContentLoaded", getVistas);
 
 function getVistas(){
+    var elem = document.documentElement;
+    elem.requestFullscreen();
     let parent = document.getElementsByTagName("body")[0];
     body = parent;
     let childrens = parent.children;
