@@ -1,0 +1,29 @@
+{
+  "name": "sportown",
+  "version": "1.0.0",
+  "description": "Desarrollar un sistema amigable que tenga la capacidad de sugerir rutinas, horarios de alimentación y ejercicio, y dietas poco estrictas que se adapten fácilmente a las necesidades de cada usuario, teniendo en cuenta sus parámetros corporales y de salud, además de recomendaciones de salida por la calidad del aire.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juan-Pablo-Escobar/SporTown.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juan-Pablo-Escobar/SporTown/issues"
+  },
+  "homepage": "https://github.com/Juan-Pablo-Escobar/SporTown#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify-es": "^3.0.0",
+    "sass": "^1.49.9"
+  }
+}
