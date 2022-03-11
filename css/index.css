@@ -53,8 +53,8 @@ body, html{
 
 .View{
     position: absolute;
-    height: 800px;
-    width: 360px;
+    height: 100%;
+    width: 100%;
     background-color: white;
 }
 
@@ -179,12 +179,36 @@ body, html{
 
 .textomenu{
     margin-bottom: unset;
-    margin-left: 8%;
+    margin-left: 4%;
     font-size: 20px;
     white-space: nowrap;
 }
 
 /* ---------- Vista Pefil ----------*/
+
+.textodescripcion{
+    font-size: 15px;
+}
+
+.divdietadescripcion{
+    position: absolute;
+    width: 75%;
+    height: 40%;
+    top: 45%;
+    overflow-y: auto;
+}
+
+.imagedieta{
+    height: 140px;
+    border: 3.5px black solid;
+    border-radius: 15px;
+    padding: 0px 20px;
+}
+
+.divimagedieta{
+    position: absolute;
+    top: 25%;
+}
 
 .iconoperfilprincipal{
     height: 120px;
@@ -275,6 +299,7 @@ body, html{
 
 .divdietas div p{
     margin-bottom: unset;
+    white-space: nowrap;
 }
 
 
@@ -308,6 +333,7 @@ body, html{
 
 .divrutinas div p{
     margin-bottom: unset;
+    white-space: nowrap;
 }
 
 
@@ -338,10 +364,11 @@ body, html{
 }
 
 .rutina-div-dias div div div img{
+    padding: 0px;
     height: 0px;
     border: 0px black solid;
     border-radius: 15px;
-    transition: height 0.2s ease-in-out 100ms,border-radius 0.2s ease-in-out 100ms, border 0.2s ease-in-out 100ms;
+    transition: height 0.2s ease-in-out 100ms,border-radius 0.2s ease-in-out 100ms, border 0.2s ease-in-out 100ms, padding 0.2s ease-in-out 100ms;
 }
 
 .rutina-div-dias div div div{
@@ -354,6 +381,7 @@ body, html{
     height: 70px;
     border: 3.5px black solid;
     border-radius: 15px;
+    padding: 5px;
 }
 
 .rutina-div-dias div div p:hover + div p{
