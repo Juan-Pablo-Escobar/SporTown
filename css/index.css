@@ -295,13 +295,13 @@ body, html{
 }
 
 
-.rutina-div-dias div div p:hover + div img{
+.rutina-div-dias div div p:active + div img{
     height: 70px;
     border: 3.5px black solid;
     border-radius: 15px;
 }
 
-.rutina-div-dias div div p:hover + div p{
+.rutina-div-dias div div p:active + div p{
     font-size: 1em;
 }
 
